@@ -34,8 +34,8 @@ backend default {
 
 You can configure Varnish daemon by following env variables:
 
-> **VCL_CONFIG** `/etc/varnish/default.vcl`
-> **CACHE_SIZE** `64m`
+> **VCL_CONFIG** `/etc/varnish/default.vcl`  
+> **CACHE_SIZE** `64m`  
 > **VARNISHD_PARAMS** `-p default_ttl=3600 -p default_grace=3600`
 
 ## Logging Output
