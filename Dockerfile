@@ -2,11 +2,13 @@ FROM debian:jessie
 MAINTAINER Justin Rupp <jrupp@globalgiving.org>
 
 RUN apt-get update -y && \
-	apt-get install -y supervisor apt-transport-https curl libmhash-dev && \
+	apt-get install -y supervisor apt-transport-https curl && \
 	curl https://repo.varnish-cache.org/GPG-key.txt | apt-key add - && \
-	echo "deb https://repo.varnish-cache.org/debian/ jessie varnish-4.0" >> /etc/apt/sources.list.d/varnish-cache.list && \
+	echo "deb https://repo.varnish-cache.org/debian/ jessie varnish-4.1" >> /etc/apt/sources.list.d/varnish-cache.list && \
 	apt-get update -y && \
-	apt-get install -y varnish
+	apt-get install -y varnish=4.1.3-1~jessie && \
+	apt-get clean && \
+	rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 COPY start.sh /start.sh
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
