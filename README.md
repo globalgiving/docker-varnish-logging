@@ -1,7 +1,7 @@
 # Varnish Docker container with logging
 
 > Debian 8 - Jessie
-> Varnish 4.0.X
+> Varnish 4.1.3
 > varnishncsa logging to stdout
 
 ## Usage
