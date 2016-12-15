@@ -1,3 +1,8 @@
+# Supported tags and respective `Dockerfile` links
+
+-	[`4.1`, `latest` (*Dockerfile*)](https://github.com/globalgiving/docker-varnish-logging/blob/master/Dockerfile)
+-	[`4.0` (*Dockerfile*)](https://github.com/globalgiving/docker-varnish-logging/blob/4.0/Dockerfile)
+
 # Varnish Docker container with logging
 
 > Debian 8 - Jessie
@@ -42,7 +47,7 @@ You can configure Varnish daemon by following env variables:
 
 The output of varnishncsa is piped to the standard out of the container, allowing the docker daemon to read it and direct that data to anywhere you wish.
 
-The format ([variable definitions](https://www.varnish-cache.org/docs/4.0/reference/varnishncsa.html)) passed to varnishncsa:
+The format ([variable definitions](https://www.varnish-cache.org/docs/4.1/reference/varnishncsa.html)) passed to varnishncsa:
 ```
 [%{x-forwarded-for}i] %u %t "%r" %s %b %T "%{Referer}i" "%{User-agent}i" %{Varnish:handling}x
 ```
