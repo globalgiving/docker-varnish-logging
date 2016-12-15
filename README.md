@@ -1,6 +1,6 @@
 # Supported tags and respective `Dockerfile` links
 
--	[`4.1`, `latest` (*Dockerfile*)](https://github.com/globalgiving/docker-varnish-logging/blob/master/Dockerfile)
+-	[`4.1.3`, `4.1`, `4`, `latest` (*Dockerfile*)](https://github.com/globalgiving/docker-varnish-logging/blob/master/Dockerfile)
 -	[`4.0` (*Dockerfile*)](https://github.com/globalgiving/docker-varnish-logging/blob/4.0/Dockerfile)
 
 # Varnish Docker container with logging
